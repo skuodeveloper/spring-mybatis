@@ -1,0 +1,192 @@
+2017-12-19 16:26:57.540  INFO 7372 --- [main] c.n.spring.mybatis.MybatisApplication    : Starting MybatisApplication on admin-PC with PID 7372 (F:\spring-mybatis\target\classes started by admin in F:\spring-mybatis)
+2017-12-19 16:26:57.579  INFO 7372 --- [main] c.n.spring.mybatis.MybatisApplication    : No active profile set, falling back to default profiles: default
+2017-12-19 16:26:57.708  INFO 7372 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d15107f: startup date [Tue Dec 19 16:26:57 CST 2017]; root of context hierarchy
+2017-12-19 16:26:59.710  INFO 7372 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-12-19 16:26:59.721  INFO 7372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-19 16:26:59.730  INFO 7372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-19 16:26:59.898  INFO 7372 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-19 16:26:59.898  INFO 7372 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2222 ms
+2017-12-19 16:27:00.030  INFO 7372 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-19 16:27:00.035  INFO 7372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-19 16:27:00.035  INFO 7372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-19 16:27:00.036  INFO 7372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-19 16:27:00.036  INFO 7372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-19 16:27:00.985  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d15107f: startup date [Tue Dec 19 16:26:57 CST 2017]; root of context hierarchy
+2017-12-19 16:27:01.119  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.index(java.lang.String)
+2017-12-19 16:27:01.119  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/addUser]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.addUser()
+2017-12-19 16:27:01.119  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser/{id}]}" onto public com.nhga.spring.mybatis.bean.User com.nhga.spring.mybatis.control.UserControl.getUserById(int)
+2017-12-19 16:27:01.120  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser]}" onto public java.util.List<com.nhga.spring.mybatis.bean.User> com.nhga.spring.mybatis.control.UserControl.getUserList()
+2017-12-19 16:27:01.120  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUserMap]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.nhga.spring.mybatis.control.UserControl.getUserMap()
+2017-12-19 16:27:01.122  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-19 16:27:01.122  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-19 16:27:01.172  INFO 7372 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-19 16:27:01.172  INFO 7372 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-19 16:27:01.226  INFO 7372 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-19 16:27:01.501  INFO 7372 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-19 16:27:01.643  INFO 7372 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-12-19 16:27:01.647  INFO 7372 --- [main] c.n.spring.mybatis.MybatisApplication    : Started MybatisApplication in 4.474 seconds (JVM running for 6.103)
+2017-12-19 16:27:05.554  INFO 7372 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-19 16:27:05.554  INFO 7372 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-19 16:27:05.569  INFO 7372 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-12-20 08:29:05.706  INFO 10076 --- [main] c.n.s.mybatis.MybatisApplicationTests    : Starting MybatisApplicationTests on admin-PC with PID 10076 (started by admin in F:\spring-mybatis)
+2017-12-20 08:29:05.730  INFO 10076 --- [main] c.n.s.mybatis.MybatisApplicationTests    : No active profile set, falling back to default profiles: default
+2017-12-20 08:29:05.823  INFO 10076 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Wed Dec 20 08:29:05 CST 2017]; root of context hierarchy
+2017-12-20 08:29:07.971  INFO 10076 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Wed Dec 20 08:29:05 CST 2017]; root of context hierarchy
+2017-12-20 08:29:11.925  INFO 10076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.index(java.lang.String)
+2017-12-20 08:29:11.926  INFO 10076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/addUser]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.addUser()
+2017-12-20 08:29:11.926  INFO 10076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser/{id}]}" onto public com.nhga.spring.mybatis.bean.User com.nhga.spring.mybatis.control.UserControl.getUserById(int)
+2017-12-20 08:29:11.926  INFO 10076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUserMap]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.nhga.spring.mybatis.control.UserControl.getUserMap()
+2017-12-20 08:29:11.927  INFO 10076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser]}" onto public java.util.List<com.nhga.spring.mybatis.bean.User> com.nhga.spring.mybatis.control.UserControl.getUserList()
+2017-12-20 08:29:11.929  INFO 10076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-20 08:29:11.929  INFO 10076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-20 08:29:12.655  INFO 10076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:29:12.660  INFO 10076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:29:12.839  INFO 10076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:29:15.418  INFO 10076 --- [main] c.n.s.mybatis.MybatisApplicationTests    : Started MybatisApplicationTests in 10.643 seconds (JVM running for 11.834)
+2017-12-20 08:29:15.593  INFO 10076 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Wed Dec 20 08:29:05 CST 2017]; root of context hierarchy
+2017-12-20 08:34:56.043  INFO 6516 --- [main] c.n.s.mybatis.MybatisApplicationTests    : Starting MybatisApplicationTests on admin-PC with PID 6516 (started by admin in F:\spring-mybatis)
+2017-12-20 08:34:56.044  INFO 6516 --- [main] c.n.s.mybatis.MybatisApplicationTests    : No active profile set, falling back to default profiles: default
+2017-12-20 08:34:56.085  INFO 6516 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Wed Dec 20 08:34:56 CST 2017]; root of context hierarchy
+2017-12-20 08:34:57.217  INFO 6516 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Wed Dec 20 08:34:56 CST 2017]; root of context hierarchy
+2017-12-20 08:34:57.273  INFO 6516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.index(java.lang.String)
+2017-12-20 08:34:57.274  INFO 6516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/addUser]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.addUser()
+2017-12-20 08:34:57.275  INFO 6516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUserMap]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.nhga.spring.mybatis.control.UserControl.getUserMap()
+2017-12-20 08:34:57.275  INFO 6516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser]}" onto public java.util.List<com.nhga.spring.mybatis.bean.User> com.nhga.spring.mybatis.control.UserControl.getUserList()
+2017-12-20 08:34:57.275  INFO 6516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser/{id}]}" onto public com.nhga.spring.mybatis.bean.User com.nhga.spring.mybatis.control.UserControl.getUserById(int)
+2017-12-20 08:34:57.277  INFO 6516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-20 08:34:57.277  INFO 6516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-20 08:34:57.305  INFO 6516 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:34:57.306  INFO 6516 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:34:57.342  INFO 6516 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:34:57.505  INFO 6516 --- [main] c.n.s.mybatis.MybatisApplicationTests    : Started MybatisApplicationTests in 1.718 seconds (JVM running for 2.332)
+2017-12-20 08:34:57.543  INFO 6516 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Wed Dec 20 08:34:56 CST 2017]; root of context hierarchy
+2017-12-20 08:37:17.586  INFO 5388 --- [main] c.n.s.mybatis.MybatisApplicationTests    : Starting MybatisApplicationTests on admin-PC with PID 5388 (started by admin in F:\spring-mybatis)
+2017-12-20 08:37:17.587  INFO 5388 --- [main] c.n.s.mybatis.MybatisApplicationTests    : No active profile set, falling back to default profiles: default
+2017-12-20 08:37:17.619  INFO 5388 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Wed Dec 20 08:37:17 CST 2017]; root of context hierarchy
+2017-12-20 08:37:18.811  INFO 5388 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Wed Dec 20 08:37:17 CST 2017]; root of context hierarchy
+2017-12-20 08:37:18.866  INFO 5388 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.index(java.lang.String)
+2017-12-20 08:37:18.867  INFO 5388 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser/{id}]}" onto public com.nhga.spring.mybatis.bean.User com.nhga.spring.mybatis.control.UserControl.getUserById(int)
+2017-12-20 08:37:18.868  INFO 5388 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser]}" onto public java.util.List<com.nhga.spring.mybatis.bean.User> com.nhga.spring.mybatis.control.UserControl.getUserList()
+2017-12-20 08:37:18.868  INFO 5388 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUserMap]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.nhga.spring.mybatis.control.UserControl.getUserMap()
+2017-12-20 08:37:18.868  INFO 5388 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/addUser]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.addUser()
+2017-12-20 08:37:18.871  INFO 5388 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-20 08:37:18.871  INFO 5388 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-20 08:37:18.902  INFO 5388 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:37:18.902  INFO 5388 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:37:18.937  INFO 5388 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:37:19.089  INFO 5388 --- [main] c.n.s.mybatis.MybatisApplicationTests    : Started MybatisApplicationTests in 1.778 seconds (JVM running for 2.383)
+2017-12-20 08:37:19.129  INFO 5388 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Wed Dec 20 08:37:17 CST 2017]; root of context hierarchy
+2017-12-20 08:56:51.858  INFO 3620 --- [main] c.n.s.mybatis.MybatisApplicationTests    : Starting MybatisApplicationTests on admin-PC with PID 3620 (started by admin in F:\spring-mybatis)
+2017-12-20 08:56:51.878  INFO 3620 --- [main] c.n.s.mybatis.MybatisApplicationTests    : No active profile set, falling back to default profiles: default
+2017-12-20 08:56:51.966  INFO 3620 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2accdbb5: startup date [Wed Dec 20 08:56:51 CST 2017]; root of context hierarchy
+2017-12-20 08:56:54.142  INFO 3620 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2accdbb5: startup date [Wed Dec 20 08:56:51 CST 2017]; root of context hierarchy
+2017-12-20 08:56:54.261  INFO 3620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.index(java.lang.String)
+2017-12-20 08:56:54.262  INFO 3620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/addUser]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.addUser()
+2017-12-20 08:56:54.262  INFO 3620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUserMap]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.nhga.spring.mybatis.control.UserControl.getUserMap()
+2017-12-20 08:56:54.263  INFO 3620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser/{id}]}" onto public com.nhga.spring.mybatis.bean.User com.nhga.spring.mybatis.control.UserControl.getUserById(int)
+2017-12-20 08:56:54.263  INFO 3620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser]}" onto public java.util.List<com.nhga.spring.mybatis.bean.User> com.nhga.spring.mybatis.control.UserControl.getUserList()
+2017-12-20 08:56:54.267  INFO 3620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-20 08:56:54.267  INFO 3620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-20 08:56:54.356  INFO 3620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:56:54.356  INFO 3620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:56:54.399  INFO 3620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 08:56:54.545  INFO 3620 --- [main] c.n.s.mybatis.MybatisApplicationTests    : Started MybatisApplicationTests in 3.567 seconds (JVM running for 4.769)
+2017-12-20 08:56:54.662  INFO 3620 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@2accdbb5: startup date [Wed Dec 20 08:56:51 CST 2017]; root of context hierarchy
+2017-12-20 09:07:59.313  INFO 6964 --- [main] c.n.spring.mybatis.MybatisApplication    : Starting MybatisApplication on admin-PC with PID 6964 (F:\spring-mybatis\target\classes started by admin in F:\spring-mybatis)
+2017-12-20 09:07:59.336  INFO 6964 --- [main] c.n.spring.mybatis.MybatisApplication    : No active profile set, falling back to default profiles: default
+2017-12-20 09:07:59.395  INFO 6964 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@338fc1d8: startup date [Wed Dec 20 09:07:59 CST 2017]; root of context hierarchy
+2017-12-20 09:07:59.623  WARN 6964 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.nhga.spring.mybatis.MybatisApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.support.SpringBootServletInitializer
+2017-12-20 09:07:59.639 ERROR 6964 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.nhga.spring.mybatis.MybatisApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.support.SpringBootServletInitializer
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.nhga.spring.mybatis.MybatisApplication.main(MybatisApplication.java:37) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.support.SpringBootServletInitializer
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:163) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:380) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:314) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:198) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 12 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/ServletContext
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_92]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_92]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_92]
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:152) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.servlet.ServletContext
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_92]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_92]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_92]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_92]
+	... 21 common frames omitted
+
+2017-12-20 09:10:23.331  INFO 5264 --- [main] c.n.spring.mybatis.MybatisApplication    : Starting MybatisApplication on admin-PC with PID 5264 (F:\spring-mybatis\target\classes started by admin in F:\spring-mybatis)
+2017-12-20 09:10:23.333  INFO 5264 --- [main] c.n.spring.mybatis.MybatisApplication    : No active profile set, falling back to default profiles: default
+2017-12-20 09:10:23.371  INFO 5264 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d7758be: startup date [Wed Dec 20 09:10:23 CST 2017]; root of context hierarchy
+2017-12-20 09:10:23.468  WARN 5264 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.nhga.spring.mybatis.MybatisApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.support.SpringBootServletInitializer
+2017-12-20 09:10:23.576 ERROR 5264 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.nhga.spring.mybatis.MybatisApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.support.SpringBootServletInitializer
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.nhga.spring.mybatis.MybatisApplication.main(MybatisApplication.java:37) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.support.SpringBootServletInitializer
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:163) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:380) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:314) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:198) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 12 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/ServletContext
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_92]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_92]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_92]
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:152) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.servlet.ServletContext
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_92]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_92]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_92]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_92]
+	... 21 common frames omitted
+
+2017-12-20 09:13:19.884  INFO 3384 --- [main] c.n.s.mybatis.MybatisApplicationTests    : Starting MybatisApplicationTests on admin-PC with PID 3384 (started by admin in F:\spring-mybatis)
+2017-12-20 09:13:19.885  INFO 3384 --- [main] c.n.s.mybatis.MybatisApplicationTests    : No active profile set, falling back to default profiles: default
+2017-12-20 09:13:19.943  INFO 3384 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2accdbb5: startup date [Wed Dec 20 09:13:19 CST 2017]; root of context hierarchy
+2017-12-20 09:13:21.762  INFO 3384 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2accdbb5: startup date [Wed Dec 20 09:13:19 CST 2017]; root of context hierarchy
+2017-12-20 09:13:21.889  INFO 3384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.index(java.lang.String)
+2017-12-20 09:13:21.890  INFO 3384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/addUser]}" onto public java.lang.String com.nhga.spring.mybatis.control.UserControl.addUser()
+2017-12-20 09:13:21.890  INFO 3384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUserMap]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.nhga.spring.mybatis.control.UserControl.getUserMap()
+2017-12-20 09:13:21.890  INFO 3384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser]}" onto public java.util.List<com.nhga.spring.mybatis.bean.User> com.nhga.spring.mybatis.control.UserControl.getUserList()
+2017-12-20 09:13:21.891  INFO 3384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/getUser/{id}]}" onto public com.nhga.spring.mybatis.bean.User com.nhga.spring.mybatis.control.UserControl.getUserById(int)
+2017-12-20 09:13:21.892  INFO 3384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-20 09:13:21.893  INFO 3384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-20 09:13:21.925  INFO 3384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 09:13:21.926  INFO 3384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 09:13:21.990  INFO 3384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 09:13:22.299  INFO 3384 --- [main] c.n.s.mybatis.MybatisApplicationTests    : Started MybatisApplicationTests in 2.654 seconds (JVM running for 3.244)
+2017-12-20 09:13:22.446  INFO 3384 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@2accdbb5: startup date [Wed Dec 20 09:13:19 CST 2017]; root of context hierarchy
