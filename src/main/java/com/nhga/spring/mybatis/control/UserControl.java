@@ -18,7 +18,7 @@ import java.util.Map;
 @RequestMapping(value = "/users")
 public class UserControl {
     /***
-     * http://localhost:8080/users?message=124
+     * http://localhost:8080/users?message=124asd
      * @param message
      * @return
      */
