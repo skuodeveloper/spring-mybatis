@@ -25,17 +25,17 @@ import org.springframework.cache.annotation.EnableCaching;
  * war打包入口
  */
 @SpringBootApplication
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @EnableCaching
 public class MybatisApplication extends SpringBootServletInitializer {
 
-	@Override
-	protected SpringApplicationBuilder configure(
-			SpringApplicationBuilder application) {
-		return application.sources(MybatisApplication.class);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MybatisApplication.class, args);
+    }
 
-	public static void main(String[] args) {
-		SpringApplication.run(MybatisApplication.class, args);
-	}
+    @Override
+    protected SpringApplicationBuilder configure(
+            SpringApplicationBuilder application) {
+        return application.sources(MybatisApplication.class);
+    }
 }

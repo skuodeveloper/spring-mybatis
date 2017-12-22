@@ -10,13 +10,13 @@ import java.util.Map;
 
 public interface UserMapper {
 
-	List<User> getUserList();
+    List<User> getUserList();
 
-	List<Map<String, Object>> getMapList();
-	
-	@Select("SELECT * FROM USER WHERE ID = #{id}")
-	@ResultMap("com.nhga.spring.mybatis.mapper.UserMapper.userResultMap")
-	User getUserById(@Param("id") int id);
+    List<Map<String, Object>> getMapList();
 
-	void addUser(User user);
+    @Select("SELECT * FROM USER WHERE ID = #{id}")
+    @ResultMap("com.nhga.spring.mybatis.mapper.UserMapper.userResultMap")
+    User getUserById(@Param("id") int id);
+
+    void addUser(User user);
 }

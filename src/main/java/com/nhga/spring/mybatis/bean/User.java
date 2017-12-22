@@ -6,13 +6,13 @@ public class User {
     private String name;
     private String password;
     private String sex;
-private String address;
+    private String address;
 
     public User() {
         super();
     }
 
-    public User(String id, String name, String password, String sex,String address) {
+    public User(String id, String name, String password, String sex, String address) {
         super();
         this.id = id;
         this.name = name;
